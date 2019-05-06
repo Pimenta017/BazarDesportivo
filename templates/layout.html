@@ -17,9 +17,9 @@
 {% set unidades = loja.unidades %}
 {% set total = loja.total() %}
 
-{% set icons = ['fas fa-question', 'fas fa-archive', 'fas fa-utensils', 'fas fa-bed'] %}
+{% set icons = ['fas fa-question', 'fas fa-columns', 'fas fa-user-tie', 'fas fa-tshirt'] %}
 <div class="navbar">
-  <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Hotel</a>
+  <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
   {% for nome in menu %}
   <a href="/pr/{{ nome.title }}"><i class="{{ icons.pop() }}"></i> {{ nome.title }}</a>
   {% endfor %}
