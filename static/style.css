@@ -53,7 +53,7 @@ td {
   overflow: auto;
 }
 
-.navbar a {
+.a1, .active {
   float: left;
   padding: 12px;
   color: white;
@@ -61,7 +61,7 @@ td {
   font-size: 17px;
 }
 
-.navbar usr {
+.a1 usr {
   float: right;
   padding: 12px;
   background-color: #c92e2e;
@@ -70,12 +70,17 @@ td {
   font-size: 17px;
 }
 
-.navbar a:hover {
+.a1:hover {
   background-color: #111;
 }
 
 .active {
-  background-color: #c92e2e;
+  background-color: #ffffff;
+  color: black;
+}
+
+.active:hover {
+  background-color: #d0d0d0;
 }
 
 @media screen and (max-width: 500px) {

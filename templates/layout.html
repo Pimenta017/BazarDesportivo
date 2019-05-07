@@ -22,15 +22,15 @@
 <div class="navbar">
     <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
     {% for nome in menu %}
-    <a href="/pr/{{ nome.title }}"><i class="{{ icons.pop() }}"></i> {{ nome.title }}</a>
+    <a class="a1" href="/pr/{{ nome.title }}"><i class="{{ icons.pop() }}"></i> {{ nome.title }}</a>
     {% endfor %}
-    <a href="/carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+    <a class="a1" href="/carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a>
     {% if usr %}
-    <a href="/logout"><i class="fa fa-fw fa-user"></i> Logout</a>
+    <a class="a1" href="/logout"><i class="fa fa-fw fa-user"></i> Logout</a>
     <usr><i class="fa fa-fw fa-user-tie"></i> {{ usr }}</usr>
     {% else %}
-    <a href="/login"><i class="fa fa-fw fa-lock"></i> Login</a>
-    <a href="/registo"><i class="fa fa-fw fa-user"></i> Registo</a>
+    <a class="a1" href="/login"><i class="fa fa-fw fa-lock"></i> Login</a>
+    <a class="a1" href="/registo"><i class="fa fa-fw fa-user"></i> Registo</a>
     {% endif %}
 </div>
 {% block conteudo %}
