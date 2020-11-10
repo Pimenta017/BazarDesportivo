@@ -1,6 +1,6 @@
 body {
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/static/Imagens/sneakers.jpg");
+  font-family: calibri, Helvetica, sans-serif;
 }
 
 input, textarea {
@@ -18,7 +18,6 @@ moeda {
 
 shop {
   display: block;
-
   font-size: lem;
   color: #C11;
   margin-top: 16px;
@@ -44,8 +43,9 @@ td {
   background-color: white;
   text-align: center;
   padding: 30px 10px;
-  width: 256px;
+  width: 300px;
   vertical-align: bottom;
+
 }
 
 .navbar {
@@ -58,7 +58,7 @@ td {
 
 .a1, .active {
   float: left;
-  padding: 16px;
+  padding: 20px;
   color: white;
   text-decoration: none;
   font-size: 17 px;
@@ -66,24 +66,22 @@ td {
 
 .a2 {
   float: right;
-  padding: 15px;
-  background-color: white;
-  color: black;
+  padding: 19px;
+  color: white;
   text-decoration: none;
   font-size: 17px;
 }
 
 .a1:hover {
-  background-color: #111;
+  background-color: grey;
 }
 
 .active {
-  background-color: #ffffff;
-  color: black;
+  color: white;
 }
 
 .active:hover {
-  background-color: #d0d0d0;
+  background-color: grey;
 }
 
 @media screen and (max-width: 500px) {
@@ -98,21 +96,26 @@ img {
 }
 
 .bazar-img {
-    width: 300px;
+  float: left;
+  width: 160px;
 }
 
 .footer {
-    background-color: #333;
-    color: white;
-    display: flex;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #262626;
+   color: white;
+   text-align: center;
+   padding: 0
+   px;
+
 }
 
 .icons {
-    padding: 50px 100px;
+   padding: 30px 30px;
 }
-
-}
-
 
 
 .marker i {
@@ -169,3 +172,4 @@ img {
 .pane {
     padding: 100px;
 }
+
