@@ -6,7 +6,7 @@
 {% block conteudo %}
 <body style="background-color: goldenrod">
 <center>
-    <h1>Lista de Quartos e Comida</h1>
+    <h1>Encomenda</h1>
     {% if carrinho.__len__() == 0 %}
     <h3>O seu carrinho está vazio.</h3>
     <img src="/static/imagens/carrinho.ico">
@@ -41,14 +41,16 @@
     {% if usr and loja.encomendar %}
     <form method="post">
         <fieldset>
-            <legend>Dados de faturação</legend>
             <label>Número de identificação fiscal</label>
             <input type="text" name="nif" value="{{ loja.usr.nif }}" required>
+
             <p></p><label>Nome completo</label>
             <input type="text" name="nome" value="{{ loja.usr.nome }} "required>
+
             <p></p><label>Morada de envio</label>
             <textarea rows="4" cols="34" name="morada" required>{{ loja.usr.morada }}</textarea>
-            <p><br></p><input type='submit' value='Finalizar a Encomenda'>
+
+            <p></p><input type='submit' value='Finalizar a Encomenda'>
         </fieldset>
     </form>
     {% elif usr %}
